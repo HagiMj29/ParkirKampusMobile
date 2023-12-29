@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ParkingActivitieActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masukkan data Booking"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Silakan Masukkan Slot yang akan digunakan"/>
+
+        <Spinner
+            android:id="@+id/edSlotId"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:autofillHints="name"
+            android:contentDescription="slot_id" />
+        <EditText
+            android:id="@+id/edVehicleNumber"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Masukkan Nomor Plat Kendaraan anda" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Silakan Masukkan Brand Kendaraan"
+            android:layout_marginTop="15dp"/>
+        <Spinner
+            android:id="@+id/vehicleBrand"
+            android:contentDescription="vehicle_brand"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:autofillHints="name"/>
+        <EditText
+            android:id="@+id/edInDatetime"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Masukkan Waktu dan Tanggal"
+            />
+
+        <Button
+            android:id="@+id/btnBooking"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Booking"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
